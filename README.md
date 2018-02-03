@@ -16,5 +16,7 @@ Create coversion for currencies USD, EURO, FUNT, PLN, and few more. NF
 
 Make better UI/UX NF
 
+Make it responsive
+
 F - finished
 NF - not finished
