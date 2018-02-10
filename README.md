@@ -12,6 +12,8 @@ Create conversion for Metric and Imperial NF
 
 Create coversion for currencies USD, EURO, FUNT, PLN, and few more. NF 
 
+Create conversion for Temperature
+
 //Data need to be downloaded from servers NF 
 
 Make better UI/UX NF
