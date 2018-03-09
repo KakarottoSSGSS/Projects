@@ -1,14 +1,16 @@
 Create interactive form to get data NF
 
-Create conversion for weight Metric System NF
+Create conversion for weight Metric System F 
 
 Create conversion for width Metric System NF
 
-Create conversion for weight Imperial System NF
+Create conversion for weight Imperial System F
 
 Create conversion for width Imperial System NF
- 
-Create conversion for Metric and Imperial NF
+
+Create conversion for fluid Imperial System NF
+
+Create conversion for fluid Metric System NF
 
 Create coversion for currencies USD, EURO, FUNT, PLN, and few more. NF 
 
