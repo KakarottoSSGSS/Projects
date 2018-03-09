@@ -20,7 +20,9 @@ Create conversion for Temperature NF
 
 Make better UI/UX NF
 
-Make it responsive
+Make it responsive NF
+
+Float Proble NF
 
 F - finished
 NF - not finished
