@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header></header>
+    <nav>
+        <ul>
+            <li>Weight</li>
+            <li>Width</li>
+            <li>Fluid</li>
+            <li>Currency</li>
+            <li>Temperature</li>
+        </ul>
+    </nav>
+    <div id="main">
+    <p>Zamiana jednostki wagi</p>
+    <label for="w">Wpisz liczbę i wybierz odpowiednie jednostki wagi</label>
+    <br>
+    <input type="number" name="weightInput" id="weightInput">
+    <select name="weight" id="weight">
+        <option value="g">g</option>
+        <option value="dag">dag</option>
+        <option value="kg">kg</option>
+        <option value="t">t</option>
+        <option value="gr">gr</option>
+        <option value="dr">dr</option>
+        <option value="oz">oz</option>
+        <option value="lb">lb</option>
+        <option value="st">st</option>
+        <option value="qr">qr</option>
+        <option value="cwt">cwt</option>
+        <option value="t(us)">t(us)</option>
+        <option value="slug">slug</option>
+    </select>
+    na
+    <select name="weight2" id="weight2">
+            <option value="g">g</option>
+            <option value="dag">dag</option>
+            <option value="kg">kg</option>
+            <option value="t">t</option>
+            <option value="gr">gr</option>
+            <option value="dr">dr</option>
+            <option value="oz">oz</option>
+            <option value="lb">lb</option>
+            <option value="st">st</option>
+            <option value="qr">qr</option>
+            <option value="cwt">cwt</option>
+            <option value="t(us)">t(us)</option>
+            <option value="slug">slug</option>
+    </select>
+    <p id="score"> wynosi: </p>
+    </div>
+    <div id="button">
+    <button id="weightok">Zatwierdź</button>
+    </div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>

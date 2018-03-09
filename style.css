@@ -1,0 +1,47 @@
+:root {
+    --baseColorOrg: #FF6700;
+    --baseColorBlue: #0545AB;
+}
+
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--baseColorBlue);
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 500px 500px 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ' header header header header '
+                         ' nav nav nav nav'
+                         '. input input .'
+                         '. input input .'
+                         '. button button .'
+                         '. footer footer .';
+    grid-gap: 0;
+
+}
+header {
+    background-color: var(--baseColorOrg);
+    grid-area: header;
+    
+}
+
+ nav {
+    background-color: var(--baseColorOrg);
+    grid-area: nav;
+}
+
+#main {
+    grid-area: input;
+}
+
+#button {
+    grid-area: button;
+ }
+
+ footer {
+    grid-area: footer;
+}
