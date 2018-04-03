@@ -4,16 +4,23 @@
 }
 
 html {
-    font-size: 18px;
+    font-size: 14px;
     margin: 0;
     padding: 0;
-    background-color: var(--baseColorBlue);
+    background-color: var(--baseColorOrg);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',sans-serif;
 }
 
 #wrapper {
     display: grid;
     grid-template-columns: 1fr 500px 500px 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    
     grid-template-areas: ' header header header header '
                          ' nav nav nav nav'
                          '. input input .'
@@ -26,22 +33,201 @@ html {
 header {
     background-color: var(--baseColorOrg);
     grid-area: header;
+    min-height: 100px;
     
 }
 
- nav {
+header p {
+    color: #FF8939;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    
+    text-align: center;
+    line-height: 10vh;
+    
+}
+
+header i {
+    margin-right: 10px;
+}
+
+nav {
     background-color: var(--baseColorOrg);
     grid-area: nav;
+    
+}
+nav ul {
+
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6,1fr);
+    
+    
+}
+
+/* nav li { <--- jak nav ul jest flexem
+    margin: auto;
+    min-width: 15vw;;
+} */
+nav a {
+    font-size: 1.5rem; 
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #FF7811;
+    color: #C65000;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    
+    
+}
+
+nav a:hover {
+    background-color: #FFA364;
+}
+
+.active {
+    background-color: #0545AB;
+}
+nav ul:first-child {
+    margin-left: 20px;
+}
+
+nav ul:last-child {
+    margin-right: 20px;
 }
 
 #main {
+    min-height: 306px;
+    margin-top: 20px;
+    font-size: 2.5rem;
     grid-area: input;
+    text-align: center;
+    color: #C65000;
 }
 
+input {
+    margin: 0 auto;
+    max-width: 65vw;
+    display: block;
+
+}
+
+input, select {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #C65000;
+    background-color: #FF7811;
+    border: none;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+}
+
+select {
+    
+}
+
+input:focus, select:focus {
+    color: #FFA364;
+    background-color: #FF8939;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+
 #button {
+    margin: 30px 0;
     grid-area: button;
+    min-height: 150px;
+    display: flex;
+
+ }
+
+ button {
+    margin: auto;
+    padding: 30px;
+    font-size: 2rem;
+    color: #C65000;
+    background-color: #FF7811;
+    transition: all 1s;
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    box-shadow: 0px 0px 10px 3px rgba(198,80,0,0.75);
+    border: none;
+ }
+
+ button:hover {
+     background-color: #FFA364;
  }
 
  footer {
     grid-area: footer;
+    min-height: 80px;
+    background-color: #C65000;
+    margin: 20px;
+    padding: 20px;
+    
 }
+
+#score {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.super {
+    vertical-align: super;
+}
+
+@media (max-width: 1000px) {
+    #wrapper {
+        grid-template-columns: 1fr 400px 400px 1fr;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+@media (max-width: 800px) {
+    #wrapper {
+        grid-template-columns: 1fr 250px 250px 1fr;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        grid-template-columns: 1fr 200px 200px 1fr;
+    }
+    /*
+    nav ul {
+        /*grid-template-columns: 1fr;
+        grid-template-rows: 5;
+        width: 80vw;*//*
+        display: block;
+         
+    }
+
+    nav ul li {
+        margin: 2vh auto;
+        
+
+    }
+    */
+    
+      
+} 

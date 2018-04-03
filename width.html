@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <p><i class="icon-balance-scale"></i>Converter of units</p>
+    </header>
+    <nav>
+        <ul>
+             <!-- <a href="#" class="active"><li>Weight</li></a>
+            <a href="#"><li>Width</li></a>
+            <a href="#"><li>fluid</li></a>
+            <a href="#"><li>Currexccy</li></a>
+            <a href="#"><li>temp</li></a> -->
+            <li><a href="weight.html" >Weight</a></li>
+            <li><a href="width.html" class="active">Width</a></li>
+            <li><a href="fluid.html">Fluid</a></li>
+            <li><a href="currency.html">Currency</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="area.html">Area</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+    
+    <label for="w">Write and choose currencies which you want to compare</label>
+    <br>
+    <input type="number" name="weightInput" id="weightInput">
+    <select name="weight" id="weight">
+        <option value="mm">mm</option>
+        <option value="cm">cm</option>
+        <option value="m">m</option>
+        <option value="km">km</option>
+        <option value="thou">thou</option>
+        <option value="inch">inch</option>
+        <option value="foot">foot</option>
+        <option value="yard">yard</option>
+        <option value="chain">chain</option>
+        <option value="fur">fur</option>
+        <option value="mile">mile</option>
+        <option value="lea">lea</option>
+        <option value="ftm">ftm</option>
+        <option value="cable">cable</option>
+        <option value="nmile">nmile</option>
+        <option value="link">link</option>
+        <option value="rod">rod</option>
+    </select>
+    for
+    <select name="weight2" id="weight2">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+            <option value="thou">thou</option>
+            <option value="inch">inch</option>
+            <option value="foot">foot</option>
+            <option value="yard">yard</option>
+            <option value="chain">chain</option>
+            <option value="fur">fur</option>
+            <option value="mile">mile</option>
+            <option value="lea">lea</option>
+            <option value="ftm">ftm</option>
+            <option value="cable">cable</option>
+            <option value="nmilw">nmile</option>
+            <option value="link">link</option>
+            <option value="rod">rod</option>
+    </select>
+    <p id="score">  </p>
+    </div>
+    
+    <div id="button">
+    <button id="weightok">Accept</button>
+    </div>
+    <footer></footer>
+    </div>
+    
+    <script src="scriptwi.js"></script>
+</body>
+</html>

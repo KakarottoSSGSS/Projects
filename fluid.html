@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <p><i class="icon-balance-scale"></i>Converter of units</p>
+    </header>
+    <nav>
+        <ul>
+             <!-- <a href="#" class="active"><li>Weight</li></a>
+            <a href="#"><li>Width</li></a>
+            <a href="#"><li>fluid</li></a>
+            <a href="#"><li>Currexccy</li></a>
+            <a href="#"><li>temp</li></a> -->
+            <li><a href="weight.html" >Weight</a></li>
+            <li><a href="width.html" >Width</a></li>
+            <li><a href="fluid.html" class="active">Fluid</a></li>
+            <li><a href="currency.html">Currency</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="area.html">Area</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+    
+    <label for="w">Write and choose currencies which you want to compare</label>
+    <br>
+    <input type="number" name="weightInput" id="weightInput">
+    <select name="weight" id="weight">
+        <option value="ml">ml</option>
+        <option value="l">l</option>
+        <option value="floz">fl oz</option>
+        <option value="gill">gill</option>
+        <option value="pint">pint</option>
+        <option value="quart">quart</option>
+        <option value="gal">gal</option>
+     </select>
+    for
+    <select name="weight2" id="weight2">
+            <option value="ml">ml</option>
+            <option value="l">l</option>
+            <option value="floz">fl oz</option>
+            <option value="gill">gill</option>
+            <option value="pint">pint</option>
+            <option value="quart">quart</option>
+            <option value="gal">gal</option>
+    </select>
+    <p id="score">  </p>
+    </div>
+    
+    <div id="button">
+    <button id="weightok">Accept</button>
+    </div>
+    <footer></footer>
+    </div>
+    
+    <script src="scriptf.js"></script>
+</body>
+</html>

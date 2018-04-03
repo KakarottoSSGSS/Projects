@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compare</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <p><i class="icon-balance-scale"></i>Converter of units</p>
+    </header>
+    <nav>
+        <ul>
+             <!-- <a href="#" class="active"><li>Weight</li></a>
+            <a href="#"><li>Width</li></a>
+            <a href="#"><li>fluid</li></a>
+            <a href="#"><li>Currexccy</li></a>
+            <a href="#"><li>temp</li></a> -->
+            <li><a href="weight.html" >Weight</a></li>
+            <li><a href="width.html" >Width</a></li>
+            <li><a href="fluid.html" >Fluid</a></li>
+            <li><a href="currency.html">Currency</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="area.html" class="active">Area</a></li>
+        </ul>
+    </nav>
+    <div id="main">
+    
+    <label for="w">Write and choose currencies which you want to compare</label>
+    <br>
+    <input type="number" name="weightInput" id="weightInput">
+    <select name="weight" id="weight">
+        <option value="mm2">mm<span class="super">2</span></option>
+        <option value="cm2">cm<span class="super">2</span></option>
+        <option value="dm2">dm<span class="super">2</span></option>
+        <option value="m2">m<span class="super">2</span></option>
+        <option value="km2">km<span class="super">2</span></option>
+        <option value="ar">ar</option>
+        <option value="hectar">hectat</option>
+        <option value="perch">perch</option>
+        <option value="rood">rood</option>
+        <option value="acre">acre</option>
+        <option value="feet2">feet<span class="super">2</span></option>
+        <option value="mile2">mile<span class="super">2</span></option>
+        <option value="yard2">yard<span class="super">2</span></option>
+     </select>
+    for
+    <select name="weight2" id="weight2">        
+        <option value="mm2">mm<span class="super">2</span></option>
+        <option value="cm2">cm<span class="super">2</span></option>
+        <option value="dm2">dm<span class="super">2</span></option>
+        <option value="m2">m<span class="super">2</span></option>
+        <option value="km2">km<span class="super">2</span></option>
+        <option value="ar">ar</option>
+        <option value="hectar">hectar</option>
+        <option value="perch">perch</option>
+        <option value="rood">rood</option>
+        <option value="acre">acre</option>
+        <option value="feet2">feet<span class="super">2</span></option>
+        <option value="mile2">mile<span class="super">2</span></option>
+        <option value="yard2">yard<span class="super">2</span></option>
+    </select>
+    <p id="score">  </p>
+    </div>
+    
+    <div id="button">
+    <button id="weightok">Accept</button>
+    </div>
+    <footer></footer>
+    </div>
+    
+    <script src="scripta.js"></script>
+</body>
+</html>
